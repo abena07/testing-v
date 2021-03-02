@@ -1,18 +1,22 @@
 <template>
 <div class="container">
  <Header title="Task Tracker"/>
+  <AddTask/>
  <Tasks  @toggler-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks"/>
+
   </div>
 </template>
 
 <script>
 import Header from './components/Header'
 import Tasks from './components/Tasks'
+import AddTasks from './components/AddTasks'
 export default {
   name: 'App',
   components: {
     Header,
-    Tasks
+    Tasks,
+    AddTasks,
   },
   methods:{
  
