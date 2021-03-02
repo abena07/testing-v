@@ -1,6 +1,6 @@
 <template>
 <div class="container">
- <Header/>
+ <Header title="Task Tracker"/>
   </div>
 </template>
 
@@ -12,8 +12,32 @@ export default {
   components: {
     Header
   },
+  data(){
+    return{
+      tasks:[]
+    }},
+    created() {
+      this.tasks=[
+        {
+          id:1,
+          text:"Dentist Appointmenet",
+          day:"June 3rd @3:00pm",
+          reminder: true ,    },
+           {
+          id:1,
+          text:"Hairdresser Appointment",
+          day: "Februaary 28th @8:00am",
+          reminder: true ,    },
+           {
+          id:1,
+          text:"Therapist appointment",
+          day:"September 7th @12:30pm",
+          reminder: false ,    }
+      ]
+    }
+  }
  
-}
+
 </script>
 
 <style>
