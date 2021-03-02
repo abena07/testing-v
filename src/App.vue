@@ -19,7 +19,7 @@ export default {
     AddTask,
   },
   methods:{
-     addTask(){
+     addTask(task){
        this.tasks=[...this.tasks, task]
      }
 ,    deleteTask(id) {
