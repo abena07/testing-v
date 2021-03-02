@@ -1,9 +1,9 @@
 <template>
 <div class="container">
  <Header title="Task Tracker"/>
- <divv-show="showAddTask">
+ <div v-show="showAddTask">
   <AddTask @add-task="addTask"/>
- </divv-show= >
+ </div >
  <Tasks  @toggler-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks"/>
 
   </div>
