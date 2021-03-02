@@ -10,13 +10,13 @@
 <script>
 import Header from './components/Header'
 import Tasks from './components/Tasks'
-import AddTasks from './components/AddTasks'
+import AddTask from './components/AddTask'
 export default {
   name: 'App',
   components: {
     Header,
     Tasks,
-    AddTasks,
+    AddTask,
   },
   methods:{
  
